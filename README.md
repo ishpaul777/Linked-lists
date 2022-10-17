@@ -337,4 +337,3 @@ ListNode* reverseKGroup(ListNode* head, int k) {
 	return newHead.next;
 }
 ```
-Always welcome new ideas and practical tricks, just leave them in the comments!
