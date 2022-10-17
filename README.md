@@ -6,7 +6,7 @@ One of the basic structures in algorithm which can be used to achieve lots of fu
 **Problems**
 There will be some of the most typical problems in this aspect, which I believe almost covers all the basic techniques that you need to solve a linked list problem.
 
-**Remove Duplicates from Sorted List**
+### **Remove Duplicates from Sorted List**
 Given a sorted linked list, delete all duplicates such that each element appear only once.
 
 ```
@@ -36,7 +36,7 @@ ListNode* deleteDuplicates(ListNode* head) {
 }
 ```
 
-**Remove Duplicates from Sorted List II**
+### **Remove Duplicates from Sorted List II**
 Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
 
 **For example,
@@ -78,7 +78,7 @@ ListNode* deleteDuplicates(ListNode* head) {
     }
 }
 ```
-***Palindrome Linked List***
+### ***Palindrome Linked List***
 Given a singly linked list, determine if it is a palindrome.
 
 Follow up:
@@ -128,7 +128,7 @@ bool isPalindrome(ListNode* head) {
     return fast == NULL;
 }
 ```
-***Rotate List***
+### ***Rotate List***
 Given a list, rotate the list to the right by k places, where k is non-negative.
 
 ```
@@ -150,7 +150,7 @@ ListNode* rotateRight(ListNode* head, int k) {
     p->next = NULL;
     return newHead;
 }
-**Add Two Numbers***
+### **Add Two Numbers***
 You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 
 ```
@@ -176,7 +176,7 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
     return newHead.next;
 }
 ```
-**Recursive**
+### **Recursive**
 ```
 ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     if(!l1 && !l2) return NULL;
@@ -189,7 +189,7 @@ ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     return newHead;
 }
 ```
-***Reverse Linked List II***
+### ***Reverse Linked List II***
 Reverse a linked list from position m to n. Do it in-place and in one-pass.
 
 ```
@@ -200,7 +200,7 @@ return 1->4->3->2->5->NULL.
 
 Note: Given m, n satisfy the following condition: 1 ≤ m ≤ n ≤ length of list.
 
-***Solution***
+### ***Solution***
 ```cpp
 ListNode* reverseBetween(ListNode head, int m, int n) {
     ListNode newHead(0);
@@ -219,7 +219,7 @@ ListNode* reverseBetween(ListNode head, int m, int n) {
     return newHead.next;
 }
 ```
-**Linked List Cycle II**
+### **Linked List Cycle II**
 Given a linked list, return the node where the cycle begins. If there is no cycle, return null. Note: Do not modify the linked list.
 
 Follow up:
@@ -250,7 +250,7 @@ ListNode *detectCycle(ListNode *head) {
     return NULL;
 }
 ```
-***Copy List with Random Pointer***
+### ***Copy List with Random Pointer***
 linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
 Return a deep copy of the list.
 
@@ -301,7 +301,7 @@ RandomListNode *copyRandomList(RandomListNode *head) {
 	return newHead.next;
 }
 ```
-***Reverse Nodes in k-Group***
+### ***Reverse Nodes in k-Group***
 Given a linked list, reverse the nodes of a linked list k at a time and return its modified list. If the number of nodes is not a multiple of k then left-out nodes in the end should remain as it is. You may not alter the values in the nodes, only nodes itself may be changed. Only constant memory is allowed.
 
 ```
